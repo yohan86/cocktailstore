@@ -20,7 +20,7 @@ const Navbar = () => {
             ease: 'Power1.easeInOut'
 
         });
-});
+},[]);
 
 
     return(
