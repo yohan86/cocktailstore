@@ -120,4 +120,40 @@ body {
       }
       
     }
+    #about{
+      @apply relative z-10 w-full min-h-dvh py-28;
+
+      .content{
+        @apply grid grid-cols-12 px-5 md:gap-12 md:px-10;
+
+        .title-blk{
+          @apply  col-span-12 md:col-span-8 space-y-5;
+
+          .btn-style{
+            @apply inline-block font-semibold text-black bg-white rounded-full text-sm py-2 px-4 mb-8;
+          }
+          
+          h2{
+            @apply text-3xl font-modern-negra text-yellow mr-0 md:text-5xl md:mr-100;
+          }
+        }
+        .review-blk{
+          @apply col-span-12 md:col-span-4 py-5 md:py-12;
+        }
+      }
+      .image-wrapper{
+        @apply relative w-full my-5 md:my-25 px-5 md:px-0;
+
+        .bottom-row,
+        .top-row{
+          @apply relative grid grid-cols-1 gap-5 mb-5 md:grid-cols-12;
+        }
+        .image-inner{
+          @apply relative h-50 md:h-72;
+        }
+        img{
+          @apply w-full h-full object-cover rounded-3xl;
+        }
+      }
+    }
 }
